@@ -30,7 +30,7 @@ COPY main /main
 COPY env /env
 
 # Copy configuration files
-COPY conf/config.yaml /conf/config.yaml
+COPY docker/conf/config.yaml /conf/config.yaml
 COPY dependencies/python-requirements.txt /dependencies/python-requirements.txt
 COPY docker/entrypoint.sh /entrypoint.sh
 

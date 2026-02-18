@@ -1,0 +1,31 @@
+app:
+  port: 8194
+  debug: True
+  key: dify-sandbox
+max_workers: 4
+max_requests: 50
+worker_timeout: 5
+python_path: /usr/local/bin/python3
+python_lib_path:
+  - "/usr/local/lib/python3.10"
+  - "/usr/local/lib/python3.10/site-packages"
+  - "/usr/lib/python3"
+  - "/usr/lib/python3/dist-packages"
+  - "/usr/lib/x86_64-linux-gnu"
+  - "/lib/x86_64-linux-gnu"
+  - "/usr/share/zoneinfo"
+  - "/etc/localtime"
+  - "/etc/timezone"
+  - "/etc/ssl/certs/ca-certificates.crt"
+  - "/etc/nsswitch.conf"
+  - "/etc/hosts"
+  - "/etc/resolv.conf"
+  - "/run/systemd/resolve/stub-resolv.conf"
+enable_network: True # please make sure there is no network risk in your environment
+enable_preload: False # please keep it as False for security purposes
+log_path: "./logs" # path to store log files, default is "./logs"
+allowed_syscalls: # please leave it empty if you have no idea how seccomp works
+proxy:
+  socks5: ''
+  http: ''
+  https: ''
