@@ -11,3 +11,5 @@ env
 main
 
 *.gen.dockerfile
+.local-go/
+.local-go124/

@@ -5,7 +5,21 @@ app:
 max_workers: 4
 max_requests: 50
 worker_timeout: 5
-python_path: /opt/python/bin/python3
+python_path: /usr/bin/python3
+python_lib_path:
+  - "/usr/lib/python3.10"
+  - "/usr/lib/python3"
+  - "/usr/lib/python3/dist-packages"
+  - "/usr/local/lib/python3.10/dist-packages"
+  - "/home/hosein/.local/lib/python3.10/site-packages"
+  - "/usr/lib/x86_64-linux-gnu"
+  - "/lib/x86_64-linux-gnu"
+  - "/usr/share/zoneinfo"
+  - "/etc/localtime"
+  - "/etc/timezone"
+
+python_pip_mirror_url: "https://mirror-pypi.runflare.com/simple"
+
 enable_network: True # please make sure there is no network risk in your environment
 enable_preload: False # please keep it as False for security purposes
 log_path: "./logs" # path to store log files, default is "./logs"
